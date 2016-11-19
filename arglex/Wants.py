@@ -1,16 +1,13 @@
 import re
 
 # class that will count Assessments lexicons
-class Generalization:
+class Wants:
 
   #constructor
   def __init__(self):
     self.ngrams = [
-                    r'(everybody|everything|anybody|anything|nobody|nothing) (else|at all)',
-                    r'in the (world|universe)',
-                    r'of all times',
-                    r'in recent memory',
-                    r'in living history'
+                    r'(you|we|i) (don\'t )?(want|wanna)',
+                    r'(you|we|i) might (not )?(want|wanna)'
                   ]
 
 
