@@ -44,7 +44,7 @@ class Classifier:
 
 
   def list_categories_names(self):
-    return "Assessments,Authority,Causation,Conditionals,Contrast,Difficulty,Doubt,Emphasis,Generalization,Inconsistency,Inyourshoes,Necessity,Possibility,Priority,Rhetoricalquestion,Structure,Wants,Priority"
+    return ["Assessments","Authority","Causation","Conditionals","Contrast","Difficulty","Doubt","Emphasis","Generalization","Inconsistency","Inyourshoes","Necessity","Possibility","Priority","Rhetoricalquestion","Structure","Wants","Priority"]
 
 
   # function to count Assessments n-grams from text
