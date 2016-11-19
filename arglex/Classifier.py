@@ -43,6 +43,10 @@ class Classifier:
     self.priority = Priority()
 
 
+  def list_categories_names(self):
+    return "Assessments,Authority,Causation,Conditionals,Contrast,Difficulty,Doubt,Emphasis,Generalization,Inconsistency,Inyourshoes,Necessity,Possibility,Priority,Rhetoricalquestion,Structure,Wants,Priority"
+
+
   # function to count Assessments n-grams from text
   def analyse(self,text):
 
@@ -70,6 +74,11 @@ class Classifier:
     result.append(self.structure.analyse(text))
     result.append(self.wants.analyse(text))
     result.append(self.priority.analyse(text))
+
+    #normalize all categories count by percentage
+    ngrams = sum(i for i in result)
+    result = list(map((lambda x: round(float(x)/ngrams,5)), result))
+
 
     return result
 
