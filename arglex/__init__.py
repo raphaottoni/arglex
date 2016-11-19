@@ -8,7 +8,6 @@ from Doubt import Doubt
 from Emphasis import Emphasis
 from Generalization import Generalization
 from Inconsistency import Inconsistency
-from Intensifiers import Intensifiers
 from Inyourshoes import Inyourshoes
 from Necessity import Necessity
 from Possibility import Possibility
@@ -17,4 +16,5 @@ from Rhetoricalquestion import Rhetoricalquestion
 from Structure import Structure
 from Wants import Wants
 from Priority import Priority
+from Classifier import Classifier
 
