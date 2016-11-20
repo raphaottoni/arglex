@@ -40,7 +40,6 @@ class Classifier:
     self.rhetoricalquestion = Rhetoricalquestion()
     self.structure = Structure()
     self.wants = Wants()
-    self.priority = Priority()
 
 
   def list_categories_names(self):
